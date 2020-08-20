@@ -1,0 +1,41 @@
+.workflow {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  p {
+    margin-bottom: 30px;
+    margin-top: 8px;
+  }
+}
+
+.card-wrapper {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: 4% repeat(3, 1fr) 4%;
+  grid-gap: 3%;
+  .card1 {
+    grid-column: 2/3;
+    position: relative;
+    top: 4%;
+  }
+  .card {
+    img {
+      padding-bottom: 10px;
+    }
+    p {
+      padding-bottom: 8px;
+    }
+  }
+}
+.companies {
+  display: grid;
+  align-items: center;
+  justify-content: center;
+  grid-template-columns: repeat(5, 1fr);
+  grid-gap: 13%;
+  padding: 15px;
+  margin: 47px 0px;
+}

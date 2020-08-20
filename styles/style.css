@@ -163,6 +163,7 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  margin-bottom: 35px;
 }
 
 .access p {
@@ -177,5 +178,73 @@ a {
   width: 65%;
   height: 65%;
   min-width: 600px;
+}
+
+.workflow {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+}
+
+.workflow p {
+  margin-bottom: 30px;
+  margin-top: 8px;
+}
+
+.card-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: 4% (1fr)[3] 4%;
+      grid-template-columns: 4% repeat(3, 1fr) 4%;
+  grid-gap: 3%;
+}
+
+.card-wrapper .card1 {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  position: relative;
+  top: 4%;
+}
+
+.card-wrapper .card img {
+  padding-bottom: 10px;
+}
+
+.card-wrapper .card p {
+  padding-bottom: 8px;
+}
+
+.companies {
+  display: -ms-grid;
+  display: grid;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-grid-columns: (1fr)[5];
+      grid-template-columns: repeat(5, 1fr);
+  grid-gap: 13%;
+  padding: 15px;
+  margin: 47px 0px;
 }
 /*# sourceMappingURL=style.css.map */
