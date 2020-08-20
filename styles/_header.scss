@@ -14,10 +14,7 @@
       margin-bottom: 20px;
     }
     p {
-      width: 45%;
-      max-width: 45%;
-      min-width: 290px;
-      margin: 20px 0px;
+      @include globalPStyling(45%, 45%);
     }
     h1 {
       font-size: 31px;
@@ -31,7 +28,7 @@
         height: 50px;
         width: 230px;
         text-align: center;
-        padding: 12px 0px;
+        padding: 8px 0px;
         border-radius: 35px;
         margin: 0px 6px;
         border-bottom: 1.5px solid rgba(65, 65, 65, 0.712);

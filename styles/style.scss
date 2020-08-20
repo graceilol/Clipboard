@@ -1,5 +1,7 @@
 @import "variables";
+@import "mixins";
 @import "header";
+@import "snippets";
 * {
   margin: 0;
   padding: 0;
@@ -10,6 +12,7 @@ body {
   font-family: $fontFamily;
   color: $darkGrayishBlue;
   font-size: 18px;
+  line-height: 1.8;
 }
 
 a {

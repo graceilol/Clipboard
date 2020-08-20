@@ -32,6 +32,7 @@
   max-width: 45%;
   min-width: 290px;
   margin: 20px 0px;
+  text-align: center;
 }
 
 .header-content h1 {
@@ -49,7 +50,7 @@
   height: 50px;
   width: 230px;
   text-align: center;
-  padding: 12px 0px;
+  padding: 8px 0px;
   border-radius: 35px;
   margin: 0px 6px;
   border-bottom: 1.5px solid rgba(65, 65, 65, 0.712);
@@ -71,6 +72,64 @@
   background-color: #26baa4;
 }
 
+.snippets {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  margin-bottom: 45px;
+}
+
+.snippets p {
+  width: 52%;
+  max-width: 52%;
+  min-width: 290px;
+  margin: 20px 0px;
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.snippets .main-section {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.snippets .main-section img {
+  position: relative;
+  left: -85px;
+  width: 72%;
+  height: 72%;
+  min-width: 500px;
+}
+
+.snippets .inner-section {
+  padding: 20px 0px;
+}
+
+.snippets .inner-section ul {
+  list-style: none;
+  width: 80%;
+  margin-bottom: 25px;
+}
+
+.snippets .inner-section ul li:nth-child(1) {
+  font-size: 21px;
+  font-weight: 600;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -82,6 +141,7 @@ body {
   font-family: "Bai Jamjuree", sans-serif;
   color: #4c545d;
   font-size: 18px;
+  line-height: 1.8;
 }
 
 a {

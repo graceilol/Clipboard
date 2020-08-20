@@ -1,0 +1,7 @@
+@mixin globalPStyling($width, $max-width) {
+  width: $width;
+  max-width: $max-width;
+  min-width: 290px;
+  margin: 20px 0px;
+  text-align: center;
+}
