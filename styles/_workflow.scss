@@ -14,14 +14,15 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: 4% repeat(3, 1fr) 4%;
-  grid-gap: 3%;
+  grid-template-columns: 4% 1fr 1fr 1fr 4%;
+
   .card1 {
     grid-column: 2/3;
     position: relative;
     top: 4%;
   }
   .card {
+    margin: 0px 5%;
     img {
       padding-bottom: 10px;
     }
@@ -34,8 +35,13 @@
   display: grid;
   align-items: center;
   justify-content: center;
-  grid-template-columns: repeat(5, 1fr);
-  grid-gap: 13%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 15px;
   margin: 47px 0px;
+  // grid-gap: 4%;
+  img {
+    margin: 0px 30px;
+    min-width: 120px;
+    width: 70%;
+  }
 }

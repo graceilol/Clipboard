@@ -17,6 +17,38 @@ a {
   display: inline-block;
 }
 
+.buttons {
+  margin-top: 10px;
+}
+
+.buttons .btn {
+  color: #fff;
+  font-weight: 600;
+  height: 50px;
+  width: 230px;
+  text-align: center;
+  padding: 8px 0px;
+  border-radius: 35px;
+  margin: 0px 6px;
+  border-bottom: 1.5px solid rgba(65, 65, 65, 0.712);
+  -webkit-transition: all 300ms linear;
+  transition: all 300ms linear;
+  -webkit-box-shadow: 1px 1px 19px 1px rgba(155, 155, 155, 0.712);
+          box-shadow: 1px 1px 19px 1px rgba(155, 155, 155, 0.712);
+}
+
+.buttons .btn:hover {
+  opacity: 0.8;
+}
+
+.buttons .btn-blue {
+  background-color: #6173ff;
+}
+
+.buttons .btn-green {
+  background-color: #26baa4;
+}
+
 .header {
   background: url(/images/bg-header-desktop.png) no-repeat;
   height: 80vh;
@@ -57,38 +89,6 @@ a {
 .header-content h1 {
   font-size: 31px;
   font-weight: 600;
-}
-
-.header-content .buttons {
-  margin-top: 10px;
-}
-
-.header-content .buttons .btn {
-  color: #fff;
-  font-weight: 600;
-  height: 50px;
-  width: 230px;
-  text-align: center;
-  padding: 8px 0px;
-  border-radius: 35px;
-  margin: 0px 6px;
-  border-bottom: 1.5px solid rgba(65, 65, 65, 0.712);
-  -webkit-transition: all 300ms linear;
-  transition: all 300ms linear;
-  -webkit-box-shadow: 1px 1px 19px 1px rgba(155, 155, 155, 0.712);
-          box-shadow: 1px 1px 19px 1px rgba(155, 155, 155, 0.712);
-}
-
-.header-content .buttons .btn:hover {
-  opacity: 0.8;
-}
-
-.header-content .buttons .btn-blue {
-  background-color: #6173ff;
-}
-
-.header-content .buttons .btn-green {
-  background-color: #26baa4;
 }
 
 .snippets {
@@ -211,9 +211,8 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: 4% (1fr)[3] 4%;
-      grid-template-columns: 4% repeat(3, 1fr) 4%;
-  grid-gap: 3%;
+  -ms-grid-columns: 4% 1fr 1fr 1fr 4%;
+      grid-template-columns: 4% 1fr 1fr 1fr 4%;
 }
 
 .card-wrapper .card1 {
@@ -222,6 +221,10 @@ a {
   grid-column: 2/3;
   position: relative;
   top: 4%;
+}
+
+.card-wrapper .card {
+  margin: 0px 5%;
 }
 
 .card-wrapper .card img {
@@ -241,10 +244,42 @@ a {
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  -ms-grid-columns: (1fr)[5];
-      grid-template-columns: repeat(5, 1fr);
-  grid-gap: 13%;
+  -ms-grid-columns: 1fr 1fr 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 15px;
   margin: 47px 0px;
+}
+
+.companies img {
+  margin: 0px 30px;
+  min-width: 120px;
+  width: 70%;
+}
+
+.download {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  text-align: center;
+  margin-top: 40px;
+  margin-bottom: 50px;
+}
+
+.download p {
+  width: 60%;
+  max-width: 60%;
+  min-width: 290px;
+  margin: 20px 0px;
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
