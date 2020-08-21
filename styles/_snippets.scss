@@ -4,6 +4,10 @@
   align-items: center;
   justify-content: center;
   margin-bottom: 45px;
+  h2 {
+    align-self: center;
+    text-align: center;
+  }
   @include breakpointDown(900px) {
     margin-top: 124px;
   }
