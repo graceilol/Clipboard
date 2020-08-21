@@ -5,8 +5,7 @@
   justify-content: center;
   margin-bottom: 45px;
   h2 {
-    align-self: center;
-    text-align: center;
+    width: 80%;
   }
   @include breakpointDown(900px) {
     margin-top: 124px;
