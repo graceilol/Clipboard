@@ -21,6 +21,9 @@ a {
   text-decoration: none;
   display: inline-block;
 }
+h2 {
+  text-align: center;
+}
 .buttons {
   margin-top: 10px;
   @include breakpointDown(900px) {
