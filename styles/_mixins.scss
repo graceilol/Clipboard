@@ -5,3 +5,9 @@
   margin: 20px 0px;
   text-align: center;
 }
+
+@mixin breakpointDown($medium) {
+  @media (max-width: $medium) {
+    @content;
+  }
+}

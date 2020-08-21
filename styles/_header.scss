@@ -1,6 +1,11 @@
 .header {
   background: url(/images/bg-header-desktop.png) no-repeat;
+  background-size: cover;
   height: 80vh;
+  @include breakpointDown(900px) {
+    background: url(/images/bg-header-mobile.png) no-repeat;
+    background-size: cover;
+  }
   &-content {
     display: flex;
     flex-direction: column;
@@ -19,6 +24,11 @@
     h1 {
       font-size: 31px;
       font-weight: $semiBold;
+      @include breakpointDown(900px) {
+        width: 80%;
+        max-width: 80%;
+        line-height: 1.05;
+      }
     }
   }
 }

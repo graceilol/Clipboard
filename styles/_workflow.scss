@@ -15,14 +15,23 @@
   align-items: center;
   justify-content: center;
   grid-template-columns: 4% 1fr 1fr 1fr 4%;
+  @include breakpointDown(900px) {
+    grid-template-columns: 1fr;
+  }
 
   .card1 {
     grid-column: 2/3;
+    @include breakpointDown(900px) {
+      grid-column: 1/2;
+    }
     position: relative;
     top: 4%;
   }
   .card {
     margin: 0px 5%;
+    @include breakpointDown(900px) {
+      margin: 0px 11%;
+    }
     img {
       padding-bottom: 10px;
     }
@@ -38,9 +47,17 @@
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   padding: 15px;
   margin: 47px 0px;
-  // grid-gap: 4%;
+  @include breakpointDown(900px) {
+    grid-template-columns: 1fr;
+    padding: 15px 7px;
+    margin: 35px 0px;
+  }
+
   img {
     margin: 0px 30px;
+    @include breakpointDown(900px) {
+      margin: 30px 20px;
+    }
     min-width: 120px;
     width: 70%;
   }
