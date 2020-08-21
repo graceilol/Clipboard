@@ -13,6 +13,10 @@ body {
   overflow-x: hidden;
 }
 
+.container {
+  width: 100%;
+}
+
 a {
   text-decoration: none;
   display: inline-block;
@@ -151,7 +155,7 @@ a {
 
 @media (max-width: 900px) {
   .snippets {
-    margin-top: 34px;
+    margin-top: 124px;
   }
 }
 
